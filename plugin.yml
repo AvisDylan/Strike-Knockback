@@ -1,0 +1,6 @@
+name: StrikeKnockback
+version: 1.0
+depend: [StrikePractice]
+author: Pro_Nil
+main: me.pronil.sprackb.StrikeKnockback
+description: StrikePractice addon that adds per kit kb support for CarbonSpigot
