@@ -93,6 +93,7 @@ import java.util.Map;
                      break;
                  case "save":
                      save();
+                     break;
                  default:
                      sender.sendMessage("Subcommand not found");
              }
