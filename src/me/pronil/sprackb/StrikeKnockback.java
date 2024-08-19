@@ -1,4 +1,4 @@
- package me.pronil.sprackb;
+package src.me.pronil.sprackb;
 
 import ga.strikepractice.events.KitSelectEvent;
 import org.bukkit.Bukkit;
