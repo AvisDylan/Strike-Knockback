@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="strikepractice-api">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../Downloads/strikepractice-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Downloads/spigot-api-1.8.8-R0.1-20160205.005117-39.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
