@@ -1,12 +1,14 @@
 name: StrikeKnockback
 version: 1.0
 depend: [StrikePractice]
-author: Pro_Nil, Avis
+author: Avis
 main: me.pronil.sprackb.StrikeKnockback
 description: StrikePractice addon that adds per kit kb support
 commands:
   strikekb:
+    description: Command to manage per kit kb profiles
     permission: strikekb.admin
 permissions:
   strikekb.admin:
-    description: Allows you to edit per kit kb
+    description: Allows you to edit per kit kb profiles
+    default: op

@@ -1,5 +1,0 @@
-# StrikePractice KnockBack v1.0
-
-# KnockBack Command To Set the Player's knockback profile . The Command is Different on Different Spigot Forks , So make Sure to Check that Out !
-# Placeholder: {player} , {kitkb} (kitkb is the kb profile you set for the kit)
-knockback-command: knockback set {kitkb} {player}

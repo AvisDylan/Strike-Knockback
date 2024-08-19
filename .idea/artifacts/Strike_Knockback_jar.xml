@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Strike-Knockback:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Strike_Knockback_jar</output-path>
+    <root id="archive" name="Strike-Knockback.jar">
+      <element id="module-output" name="Strike-Knockback" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Downloads/strikepractice-api.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Downloads/spigot-api-1.8.8-R0.1-20160205.005117-39.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
