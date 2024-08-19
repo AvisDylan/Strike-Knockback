@@ -25,6 +25,9 @@ import java.util.Map;
          System.out.println("\n \n ------------- \n \n StrikePractice KnockBack \n \n Successfully Loaded \n \n Author - Pro_Nil/Avis \n \n ------------- ");
          Bukkit.getPluginManager().registerEvents(this, this);
 
+         this.getConfig().options().copyDefaults(true);
+         saveConfig();
+
          load();
      }
 
@@ -86,9 +89,6 @@ import java.util.Map;
      }
 
      public void load(){
-         this.getConfig().options().copyDefaults(true);
-         saveConfig();
-
          if(this.getConfig().contains("kits")){
              for(String kitName : config.getConfigurationSection("kits").getKeys(false)){
                  String kbProfile = config.getString("kits." + kitName);
