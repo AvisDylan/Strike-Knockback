@@ -89,10 +89,13 @@ import java.util.Map;
                      break;
                  case "debug":
                      debug = !debug;
+
                      sender.sendMessage(debug ? "Enabled" : "Disabled" + " debug mode");
+
                      break;
                  case "save":
                      save();
+
                      break;
                  default:
                      sender.sendMessage("Subcommand not found");
