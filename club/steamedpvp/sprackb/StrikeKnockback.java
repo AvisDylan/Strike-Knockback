@@ -19,7 +19,8 @@ import java.util.Map;
 
  public final class StrikeKnockback extends JavaPlugin implements Listener {
 
-     Plugin plugin = this;
+     // DISCLAIMER I MADE THIS IN LIKE 20 MINUTES I KNOW THE CODE IS BAD FEEL FREE TO IMPROVE IG???
+
      public static FileConfiguration config;
      public static Map<String, String> kitProfiles = new HashMap<>();
      public static boolean debug = false;
@@ -55,7 +56,7 @@ import java.util.Map;
          }
 
          String kbProfile = kitProfiles.get(kitName.toLowerCase());
-         String kbcommand = this.getConfig().getString("knockback-command")
+         String kbcommand = config.getString("knockback-command")
                  .replace("{kitkb}", kbProfile)
                  .replace("{player}", player.getName());
 
@@ -100,17 +101,17 @@ import java.util.Map;
      }
 
      public void save(){
-         this.getConfig().set("kits", null);
+         config.set("kits", null);
 
          for(Map.Entry<String, String> entry : kitProfiles.entrySet()){
-             this.getConfig().set("kits." + entry.getKey(), entry.getValue());
+             config.set("kits." + entry.getKey(), entry.getValue());
          }
 
          saveConfig();
      }
 
      public void load(){
-         if(this.getConfig().contains("kits")){
+         if(config.contains("kits")){
              for(String kitName : config.getConfigurationSection("kits").getKeys(false)){
                  kitProfiles.put(kitName.toLowerCase(), config.getString("kits." + kitName).toLowerCase());
              }
